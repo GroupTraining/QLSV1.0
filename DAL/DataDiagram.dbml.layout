@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15.75, 8.5" name="DataDiagram">
+  <DataContextMoniker Name="/DataDiagramDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6eaff469-be4d-46f2-9665-a7e44fc9d886" absoluteBounds="13.5, 2.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DataDiagramDataContext/Diem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1881bc4a-3dde-4068-a947-b212b6e421f5" absoluteBounds="13.515, 2.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b46ae173-7b22-4f10-8a3f-87a8b256cb9a" absoluteBounds="5.125, 1.625, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/DataDiagramDataContext/GiaoVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29d90d52-6b13-4efb-80ad-913a96264225" absoluteBounds="5.1400000000000006, 2.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="85000dca-c334-4efa-b659-8b4a68488d10" absoluteBounds="10.75, 3, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DataDiagramDataContext/HocSinh" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3590263d-194d-4651-bb51-4b09d8f6ff91" absoluteBounds="10.765, 3.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a0a4ea59-24cf-4aba-8b35-f2f7eb17951a" absoluteBounds="8, 1.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataDiagramDataContext/Lop" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c559623-1519-434f-a7a5-6ca966b7610a" absoluteBounds="8.015, 2.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0e2f183-d06f-4c68-85e4-d63c81ad2d8e" absoluteBounds="8.75, 0.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DataDiagramDataContext/MonHoc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a13d575e-b252-41f4-a5f5-bab2fd39ddb3" absoluteBounds="8.765, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(12.75 : 3.31814697265625); (13.5 : 3.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataDiagramDataContext/HocSinh/HocSinh_Diem" />
+      <nodes>
+        <classShapeMoniker Id="85000dca-c334-4efa-b659-8b4a68488d10" />
+        <classShapeMoniker Id="6eaff469-be4d-46f2-9665-a7e44fc9d886" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10 : 3.22679768880208); (10.75 : 3.22679768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataDiagramDataContext/Lop/Lop_HocSinh" />
+      <nodes>
+        <classShapeMoniker Id="a0a4ea59-24cf-4aba-8b35-f2f7eb17951a" />
+        <classShapeMoniker Id="85000dca-c334-4efa-b659-8b4a68488d10" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.125 : 2.66429768880208); (8 : 2.66429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataDiagramDataContext/GiaoVien/GiaoVien_Lop" />
+      <nodes>
+        <classShapeMoniker Id="b46ae173-7b22-4f10-8a3f-87a8b256cb9a" />
+        <classShapeMoniker Id="a0a4ea59-24cf-4aba-8b35-f2f7eb17951a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 1.09699625651042); (14.5 : 1.09699625651042); (14.5 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataDiagramDataContext/MonHoc/MonHoc_Diem" />
+      <nodes>
+        <classShapeMoniker Id="c0e2f183-d06f-4c68-85e4-d63c81ad2d8e" />
+        <classShapeMoniker Id="6eaff469-be4d-46f2-9665-a7e44fc9d886" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 1.0624995); (6.125 : 1.0624995); (6.125 : 1.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataDiagramDataContext/MonHoc/MonHoc_GiaoVien" />
+      <nodes>
+        <classShapeMoniker Id="c0e2f183-d06f-4c68-85e4-d63c81ad2d8e" />
+        <classShapeMoniker Id="b46ae173-7b22-4f10-8a3f-87a8b256cb9a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
