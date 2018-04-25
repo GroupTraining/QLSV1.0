@@ -18,6 +18,7 @@ namespace QLSV.GUI
         public ThemGV()
         {
             InitializeComponent();
+            this.CenterToParent();
             dataGridViewX1.DataSource = bus.getData1();
         }
         

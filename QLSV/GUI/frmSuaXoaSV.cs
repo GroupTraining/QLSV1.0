@@ -17,7 +17,7 @@ namespace QLSV.GUI
         public frmSuaXoaSV()
         {
             InitializeComponent();
-
+            this.CenterToParent();
             dataGridView1.DataSource = db.getData2();
             this.dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;

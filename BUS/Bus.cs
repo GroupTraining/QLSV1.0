@@ -11,6 +11,20 @@ namespace BUS
     public class Bus
     {
         DataDiagramDataContext data = new DataDiagramDataContext();
+        public int check_login(string user, string pass)
+        {
+            int login = (from tks in data.TaiKhoans
+                         where tks.username == user && tks.password == pass
+                         select tks).Count();
+            if (login == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
         public object getData1()//Lấy các dữ liệu liên quan đến giáo viên
         {
             var database = from u in data.GiaoViens

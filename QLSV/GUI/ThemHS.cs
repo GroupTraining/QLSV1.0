@@ -18,6 +18,7 @@ namespace QLSV.GUI
         public ThemHS()
         {
             InitializeComponent();
+            this.CenterToParent();
             dataGridView2.DataSource = bus.getData2();
             this.dataGridView2.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridView2.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;

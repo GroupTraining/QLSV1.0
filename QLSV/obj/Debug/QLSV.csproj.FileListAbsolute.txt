@@ -51,3 +51,4 @@ C:\Users\HungZoro\Documents\GitHub\QuanLy\QLSV1.0\QLSV1.0\QLSV\obj\Debug\QLSV.GU
 C:\Users\HungZoro\Documents\GitHub\QuanLy\QLSV1.0\QLSV1.0\QLSV\obj\Debug\QLSV.GUI.Search.resources
 C:\Users\HungZoro\Documents\GitHub\QuanLy\QLSV1.0\QLSV1.0\QLSV\obj\Debug\QLSV.GUI.frmSuaXoaSV.resources
 C:\Users\HungZoro\Documents\GitHub\QuanLy\QLSV1.0\QLSV1.0\QLSV\obj\Debug\QLSV.GUI.EditTeacher.resources
+C:\Users\HungZoro\Documents\GitHub\QuanLy\QLSV1.0\QLSV1.0\QLSV\obj\Debug\QLSV.GUI.Login.resources

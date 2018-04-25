@@ -18,6 +18,7 @@ namespace QLSV.GUI
         public ThemDiem()
         {
             InitializeComponent();
+            this.CenterToParent();
             dataGridView3.DataSource = bus.getData3();
             this.dataGridView3.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridView3.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;

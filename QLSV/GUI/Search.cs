@@ -18,6 +18,7 @@ namespace QLSV.GUI
         public Search()
         {
             InitializeComponent();
+            this.CenterToParent();
             dgvSinhVien.DataSource = bus.getData2();
             this.dgvSinhVien.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             this.dgvSinhVien.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;

@@ -15,6 +15,7 @@ namespace QLSV.GUI
         public Main()
         {
             InitializeComponent();
+            this.CenterToParent();
         }
 
         private void Main_Load(object sender, EventArgs e)

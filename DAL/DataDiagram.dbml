@@ -50,4 +50,13 @@
       <Association Name="MonHoc_GiaoVien" Member="GiaoViens" ThisKey="MaMon" OtherKey="MaMon" Type="GiaoVien" />
     </Type>
   </Table>
+  <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
+    <Type Name="TaiKhoan">
+      <Column Name="username" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>

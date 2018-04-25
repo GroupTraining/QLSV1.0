@@ -19,6 +19,7 @@ namespace QLSV.GUI
         public ThongKe()
         {
             InitializeComponent();
+            this.CenterToParent();
         }
 
         private void ThongKe_Load(object sender, EventArgs e)

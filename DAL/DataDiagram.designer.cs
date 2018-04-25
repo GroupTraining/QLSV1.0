@@ -116,6 +116,14 @@ namespace DAL
 				return this.GetTable<MonHoc>();
 			}
 		}
+		
+		public System.Data.Linq.Table<TaiKhoan> TaiKhoans
+		{
+			get
+			{
+				return this.GetTable<TaiKhoan>();
+			}
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Diem")]
@@ -1130,6 +1138,105 @@ namespace DAL
 		{
 			this.SendPropertyChanging();
 			entity.MonHoc = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TaiKhoan")]
+	public partial class TaiKhoan
+	{
+		
+		private string _username;
+		
+		private string _password;
+		
+		private string _name;
+		
+		private string _phone;
+		
+		private string _email;
+		
+		public TaiKhoan()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_username", DbType="NVarChar(50)")]
+		public string username
+		{
+			get
+			{
+				return this._username;
+			}
+			set
+			{
+				if ((this._username != value))
+				{
+					this._username = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_password", DbType="NVarChar(50)")]
+		public string password
+		{
+			get
+			{
+				return this._password;
+			}
+			set
+			{
+				if ((this._password != value))
+				{
+					this._password = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="NVarChar(MAX)")]
+		public string name
+		{
+			get
+			{
+				return this._name;
+			}
+			set
+			{
+				if ((this._name != value))
+				{
+					this._name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_phone", DbType="NVarChar(MAX)")]
+		public string phone
+		{
+			get
+			{
+				return this._phone;
+			}
+			set
+			{
+				if ((this._phone != value))
+				{
+					this._phone = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_email", DbType="NVarChar(MAX)")]
+		public string email
+		{
+			get
+			{
+				return this._email;
+			}
+			set
+			{
+				if ((this._email != value))
+				{
+					this._email = value;
+				}
+			}
 		}
 	}
 }

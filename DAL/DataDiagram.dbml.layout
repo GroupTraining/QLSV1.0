@@ -39,21 +39,21 @@
         <classShapeMoniker Id="6eaff469-be4d-46f2-9665-a7e44fc9d886" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(10 : 3.22679768880208); (10.75 : 3.22679768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(10 : 3.22679768880208); (10.75 : 3.22679768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DataDiagramDataContext/Lop/Lop_HocSinh" />
       <nodes>
         <classShapeMoniker Id="a0a4ea59-24cf-4aba-8b35-f2f7eb17951a" />
         <classShapeMoniker Id="85000dca-c334-4efa-b659-8b4a68488d10" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(7.125 : 2.66429768880208); (8 : 2.66429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(7.125 : 2.89349609375); (8 : 2.89349609375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DataDiagramDataContext/GiaoVien/GiaoVien_Lop" />
       <nodes>
         <classShapeMoniker Id="b46ae173-7b22-4f10-8a3f-87a8b256cb9a" />
         <classShapeMoniker Id="a0a4ea59-24cf-4aba-8b35-f2f7eb17951a" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(10.75 : 1.09699625651042); (14.5 : 1.09699625651042); (14.5 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(10.75 : 1.09699625651042); (14.5 : 1.09699625651042); (14.5 : 2.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DataDiagramDataContext/MonHoc/MonHoc_Diem" />
       <nodes>
         <classShapeMoniker Id="c0e2f183-d06f-4c68-85e4-d63c81ad2d8e" />
@@ -67,5 +67,11 @@
         <classShapeMoniker Id="b46ae173-7b22-4f10-8a3f-87a8b256cb9a" />
       </nodes>
     </associationConnector>
+    <classShape Id="018c7ab6-41b2-4358-add6-74fdb019ba11" absoluteBounds="7.375, 3.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataDiagramDataContext/TaiKhoan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16cfb293-abae-444f-a0c4-afbe34093b67" absoluteBounds="7.39, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>
